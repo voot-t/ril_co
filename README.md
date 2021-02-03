@@ -49,7 +49,7 @@ These are visualized behavior of expert policies, (one of) non-expert policies, 
 ![](/videos/HopperBulletEnv-v0_expert/HopperBulletEnv-v0_expert.gif "Expert HopperBullet")
 ![](/videos/Walker2DBulletEnv-v0_expert/Walker2DBulletEnv-v0_expert.gif "Expert Walker2DBullet")
 
-* (One of) Non-expert policies
+* One of non-expert policies
 
 ![](/videos/HalfCheetahBulletEnv-v0_expertP0.4/HalfCheetahBulletEnv-v0_expertP0.4.gif "Non-expert HalfCheetahBullet")
 ![](/videos/AntBulletEnv-v0_expertP0.4/AntBulletEnv-v0_expertP0.4.gif "Non-expert AntBullet")
