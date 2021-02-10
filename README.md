@@ -45,7 +45,7 @@ main.py --il_algo ail --ail_loss logistic --env_name HalfCheetahBulletEnv-v0 --n
 ## Visualization of learned policies
 These are visualized behavior of agents learned by RIL-Co, expert agents, and one of non-expert agents. Visualizations can be reproduced using my_enjoy.py. Quantitative results such as learning curves can be found in the paper. 
 
-* Learned agents by RIL-Co
+* Agents learned by RIL-Co from datasets with noise rate 0.4
 
 ![](/videos/HalfCheetahBulletEnv-v0_rilco/HalfCheetahBulletEnv-v0_rilco.gif "RIL-Co HalfCheetahBullet")
 ![](/videos/AntBulletEnv-v0_rilco/AntBulletEnv-v0_rilco.gif "RIL-Co AntBullet")
