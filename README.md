@@ -1,7 +1,7 @@
 # Robust Imitation Learning with Co-pseudo-labeling (RIL-Co)
-This reposity contains PyTorch implementation of an imitation learning (IL) algorithm called Robust IL with Co-pseudo-labeling (RIL-Co) presented in AISTATS 2021 paper "Robust Imitation Learning from Noisy Demonstrations" by Voot Tangkaratt, Nontawat Charoenphakdee, and Masashi Sugiyama. 
+This reposity contains PyTorch implementation of the Robust IL with Co-pseudo-labeling (RIL-Co) algorithm proposed in AISTATS 2021 paper "Robust Imitation Learning from Noisy Demonstrations" by Voot Tangkaratt, Nontawat Charoenphakdee, and Masashi Sugiyama. 
 
-## One line summary of the paper
+## Short summary of the paper
 The paper presented a theory and an algorithm for robustly learning an expert policy from noisy demonstrations containing both expert and non-expert demonstrations. 
 
 ## Requirements
@@ -29,17 +29,17 @@ Setting arguments is necessary for running experiments via main.py (see /a2c_ppo
 * Use --env_name *environment_name* to set gym environment to train on. We tested RIL-Co on these PyBullet environments: "HalfCheetahBulletEnv-v0", "HopperBulletEnv-v0", "Walker2DBulletEnv-v0", "AntBulletEnv-v0". For these environments, the datasets used in paper are already included in /imitation_data directory. Generating datasets for other environments is possible by using save_traj.py and PyTorch policy models. 
 * Use --noise_prior *noise_value* to set noise rate in the training dataset. *noise_value* can be 0.0, 0.1, 0.2, 0.3, 0.4. (0.0 means 100% expert data samples, while 0.4 means 60% of data samples come from expert policy and the rest 40% come from non-expert policies.)
 
-Besides these arguments, you can also set rl algorithm and other hyper-parameters. Our experiments use ACKTR implemented by /ikostrikov/pytorch-a2c-ppo-acktr-gail with arguments --algo acktr --num-process 32 --num-steps 20 --use-proper-time-limits.
+Besides these arguments, you can also set RL algorithm and other hyper-parameters. Our experiments use ACKTR implemented by /ikostrikov/pytorch-a2c-ppo-acktr-gail with arguments --algo acktr --num-process 32 --num-steps 20 --use-proper-time-limits.
 
 ### Example commands and arguments
 To run RIL-Co with the AP loss, using a HalfCheeahBullet dataset with noise rate 0.4:
 ```
-main.py --il_algo ril_co --ail_loss apl --env_name HalfCheetahBulletEnv-v0 --noise_prior 0.4 --algo acktr --num-process 32 --num-steps 20 --use-proper-time-limits
+python main.py --il_algo ril_co --ail_loss apl --env_name HalfCheetahBulletEnv-v0 --noise_prior 0.4 --algo acktr --num-process 32 --num-steps 20 --use-proper-time-limits
 ```
 
 To run GAIL with the logistic loss, using a HalfCheeahBullet dataset with noise rate 0.0:
 ```
-main.py --il_algo ail --ail_loss logistic --env_name HalfCheetahBulletEnv-v0 --noise_prior 0.0 --algo acktr --num-process 32 --num-steps 20 --use-proper-time-limits
+python main.py --il_algo ail --ail_loss logistic --env_name HalfCheetahBulletEnv-v0 --noise_prior 0.0 --algo acktr --num-process 32 --num-steps 20 --use-proper-time-limits
 ```
 
 ## Visualization of learned policies
