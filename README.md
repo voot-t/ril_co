@@ -53,7 +53,7 @@ These are visualized behavior of agents learned by RIL-Co, expert agents, and on
 ![](/videos/HopperBulletEnv-v0_rilco/HopperBulletEnv-v0_rilco.gif "RIL-Co HopperBullet")
 ![](/videos/Walker2DBulletEnv-v0_rilco/Walker2DBulletEnv-v0_rilco.gif "RIL-Co Walker2DBullet")
 
-* Expert agents
+* Expert agents (Optimal ACKTR agents pre-trained with true rewards)
 
 ![](/videos/HalfCheetahBulletEnv-v0_expert/HalfCheetahBulletEnv-v0_expert.gif "Expert HalfCheetahBullet")
 ![](/videos/AntBulletEnv-v0_expert/AntBulletEnv-v0_expert.gif "Expert AntBullet")
@@ -61,7 +61,7 @@ These are visualized behavior of agents learned by RIL-Co, expert agents, and on
 ![](/videos/HopperBulletEnv-v0_expert/HopperBulletEnv-v0_expert.gif "Expert HopperBullet")
 ![](/videos/Walker2DBulletEnv-v0_expert/Walker2DBulletEnv-v0_expert.gif "Expert Walker2DBullet")
 
-* One of non-expert agents
+* One of non-expert agents (Sub-optimal ACKTR agents pre-trained with true rewards)
 
 ![](/videos/HalfCheetahBulletEnv-v0_expertP0.4/HalfCheetahBulletEnv-v0_expertP0.4.gif "Non-expert HalfCheetahBullet")
 ![](/videos/AntBulletEnv-v0_expertP0.4/AntBulletEnv-v0_expertP0.4.gif "Non-expert AntBullet")
