@@ -19,8 +19,7 @@ The main changes from the pytorch-a2c-ppo-acktr-gail repository are IL algorithm
 
 Important files for running experiments are 
 * main.py - Script to run experiments with RIL-Co and comparison adversarial IL. (Script for behavior cloning (BC) is main_bc.py)
-* a2c_ppo_acktr/algo/ail.py - Script implementing RIL-Co and comparison adversarial IL excluding BC and VILD (Those are in bc.py and vild.py).
-* my_enjoy.py - Script to visualize trajectories from trained policies. PyTorch models of policies trained by RIL-Co are included in ./trained_models. 
+* a2c_ppo_acktr/algo/ril.py - Script implementing RIL-Co algorithm (Class RIL_CO). It also implements RIL-P used in the ablation study (Class RIL).
 
 ### Setting arguments
 Setting arguments is necessary for running experiments via main.py (see /a2c_ppo_acktr/arguments.py)
