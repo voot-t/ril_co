@@ -43,7 +43,15 @@ main.py --il_algo ail --ail_loss logistic --env_name HalfCheetahBulletEnv-v0 --n
 ```
 
 ## Visualization of learned policies
-These are visualized behavior of expert agents, one of non-expert agents, and agents learned by RIL-Co. Visualizations can be reproduced using my_enjoy.py. Quantitative results such as learning curves can be found in the paper. 
+These are visualized behavior of agents learned by RIL-Co, expert agents, and one of non-expert agents. Visualizations can be reproduced using my_enjoy.py. Quantitative results such as learning curves can be found in the paper. 
+
+* Learned agents by RIL-Co
+
+![](/videos/HalfCheetahBulletEnv-v0_rilco/HalfCheetahBulletEnv-v0_rilco.gif "RIL-Co HalfCheetahBullet")
+![](/videos/AntBulletEnv-v0_rilco/AntBulletEnv-v0_rilco.gif "RIL-Co AntBullet")
+
+![](/videos/HopperBulletEnv-v0_rilco/HopperBulletEnv-v0_rilco.gif "RIL-Co HopperBullet")
+![](/videos/Walker2DBulletEnv-v0_rilco/Walker2DBulletEnv-v0_rilco.gif "RIL-Co Walker2DBullet")
 
 * Expert agents
 
@@ -60,11 +68,3 @@ These are visualized behavior of expert agents, one of non-expert agents, and ag
 
 ![](/videos/HopperBulletEnv-v0_expertP0.4/HopperBulletEnv-v0_expertP0.4.gif "Non-expert HopperBullet")
 ![](/videos/Walker2DBulletEnv-v0_expertP0.4/Walker2DBulletEnv-v0_expertP0.4.gif "Non-expert Walker2DBullet")
-
-* Learned agents by RIL-Co
-
-![](/videos/HalfCheetahBulletEnv-v0_rilco/HalfCheetahBulletEnv-v0_rilco.gif "RIL-Co HalfCheetahBullet")
-![](/videos/AntBulletEnv-v0_rilco/AntBulletEnv-v0_rilco.gif "RIL-Co AntBullet")
-
-![](/videos/HopperBulletEnv-v0_rilco/HopperBulletEnv-v0_rilco.gif "RIL-Co HopperBullet")
-![](/videos/Walker2DBulletEnv-v0_rilco/Walker2DBulletEnv-v0_rilco.gif "RIL-Co Walker2DBullet")
