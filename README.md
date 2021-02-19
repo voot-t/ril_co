@@ -1,5 +1,5 @@
 # Robust Imitation Learning with Co-pseudo-labeling
-This reposity contains PyTorch implementation of the Robust IL with Co-pseudo-labeling (RIL-Co) algorithm proposed in AISTATS 2021 paper "Robust Imitation Learning from Noisy Demonstrations" by Voot Tangkaratt, Nontawat Charoenphakdee, and Masashi Sugiyama. 
+This reposity contains PyTorch implementation of Robust IL with Co-pseudo-labeling (RIL-Co) proposed in AISTATS 2021 paper "Robust Imitation Learning from Noisy Demonstrations" by Voot Tangkaratt, Nontawat Charoenphakdee, and Masashi Sugiyama. ([arXiv link](https://arxiv.org/abs/2010.10181))
 
 ## Short summary of the paper
 The paper presented a theory and an algorithm for robustly learning an expert policy from noisy demonstrations containing both expert and non-expert demonstrations. 
