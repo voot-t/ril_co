@@ -2,12 +2,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.data as data 
-import lmdb
+# import lmdb
 import os.path as osp
-import pyarrow as pa
+# import pyarrow as pa
 import six
 import numpy as np 
-import PIL 
+# import PIL 
 from matplotlib import pyplot as plt
 import pickle 
 
